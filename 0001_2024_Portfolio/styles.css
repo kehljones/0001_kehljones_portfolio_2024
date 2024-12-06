@@ -1,0 +1,326 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400&family=Red+Hat+Display:wght@400&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home Header Styling */
+.home-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100vh;
+  background: url('content/DSCF7961-5.jpg') no-repeat center center/cover;
+  text-align: center;
+  color: white;
+}
+
+/* Contact Header Styling */
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('content/headshot_outoffocus.jpg') no-repeat center center/cover;
+  text-align: center;
+  color: white;
+}
+
+.home-header h1 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 4em;
+  margin-bottom: 0px;
+  color: black;
+  line-height: 70%;
+}
+
+.home-header h2 {
+  font-family: 'Noto Sans Mono', monospace;
+  font-size: 1.4em;
+  color: black;
+  margin-top: 0%;
+  line-height:80%;
+}
+
+.link {
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 1.4em;
+    color: rgb(255, 255, 255);
+    margin-top:20px;
+    line-height:80%;
+    text-align: left;
+  }
+
+a:hover {
+  color: rgb(114, 114, 114);
+  transition: color 0.5s;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Noto Sans Mono', monospace;
+    line-height: 1.5;
+    color: #000000;
+    background-color: none;
+    cursor: crosshair;
+}
+
+.white {
+  color: white;
+}
+
+/* Padding Classes */
+.top-padding {
+  margin-top: 5px;
+}
+
+.dv-pad-top {
+  padding-top: 100px;
+}
+  
+
+
+.lr-padding {
+  margin-left: 5px;
+}
+
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    background: black;
+    padding: 0px 0px;
+    z-index: 1000;
+}
+
+nav h2 {
+    margin: 1px 10px;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: crosshair;
+}
+
+nav h2 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.5s;
+    font-weight: 500;
+    cursor: crosshair;
+}
+
+nav h2 a:hover {
+    color: rgb(114, 114, 114);
+    cursor: crosshair;
+}
+
+h3 {
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 1em;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    cursor: crosshair;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: inherit;
+    border: none;
+    outline: none;
+    color: white;
+    padding: inherit;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: crosshair;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    min-width: 0px;
+    z-index: 0;
+    transition: color 0.5s;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 0px 0px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    color: rgb(107, 107, 107);
+    font-size: inherit;
+    font-weight: 500;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: none;
+    color: rgb(122, 122, 122);
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Cursor crosshair */
+  .crosshair       { 
+    cursor: crosshair; 
+  }
+
+
+  .projects {
+    background-color: black;
+  }
+
+
+  /* Projects Gallery */
+  div.gallery {
+    border: 1px;
+    cursor: crosshair; 
+  }
+  
+  div.gallery:hover {
+    opacity: 70%;
+    transition-duration: 0.5s;
+    cursor: crosshair;
+    filter: invert(100)
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    cursor: crosshair; 
+    object-fit: cover;
+  }
+  
+  div.desc {
+    padding: 5px;
+    text-align: left;
+    color: white;
+    text-wrap: nowrap;
+  }
+
+  div.desc:hover {
+    opacity: 50%;
+    transition-duration: 0.5s;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  /* IMAGE FILTERS */
+
+  .img-bw {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+
+
+
+
+  /* PROJECT IMAGES */
+
+div.project-img img {
+    width: 100%;
+    height: auto;
+    cursor: crosshair; 
+    object-fit: cover;
+
+  }
+
+
+  /*SCROLL TO TOP BUTTON */
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: none; /* Set a background color */
+    color: black; /* Text color */
+    cursor: crosshair; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 24px; /* Increase font size */
+    height: 50px;
+    width: 50px;
+  }
+  
+  #myBtn:hover {
+    background-color: none; /* Add a dark-grey background on hover */
+    transition-duration: 0.5s;
+    filter: invert(50);
+  }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 200,
+  'opsz' 48;
+}
